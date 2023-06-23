@@ -1,0 +1,151 @@
+*{
+    margin: 0;          /* is a CSS reset or normalization technique that sets */
+    padding: 0;         /*the margin and padding of all elements in the HTML document to 0*/
+}
+
+
+body {          /*background image*/
+  background-image: url("images/340541.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {        /*the nav elements bar*/
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {     
+  margin-left: 15px;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+@font-face {      /*font for nav elements */
+  font-family: 'Italiana';
+  src: url('fonts/Italiana/Italiana-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {      /*font for hero text*/
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand/Quicksand-VariableFont_wght.ttf')format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+nav ul li a {       /*nav elements style*/
+  text-decoration: none;
+  font-family: 'Italiana', sans-serif;
+  font-style: normal;
+  font-weight: 595;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #650B7C;
+}
+
+nav ul li a::after {    /*line under the nav links*/
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #FFA200;
+  display: block;
+  margin: auto;
+  transition: 0.05s;   /*time duration of the line under the nav elements*/
+}
+
+nav ul li a:hover::after{     /* width of line under the nav elements*/
+  width: 100%;
+}
+
+.hero-txt {         /*style for hero text*/
+  color: white;
+  position: absolute;
+  text-align: left;
+  top: 319px;
+  left: 58px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.sub-hero {         /*style for sub-hero text*/
+  color: white;
+  position: absolute;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  top: 400px;
+  left: 58px;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+
+.hero-image img {   /*hero image styling*/
+  position: absolute;
+  top: 100px;
+  left: 750px;
+  height: 630px;
+}
+
+
+ /*JUST FOR KNOWLEDGE*/
+
+/* 1. ul.social-icons: This targets a specific unordered list element with the class "social-icons". 
+It sets the list style to none (removes the default bullet points), 
+and applies padding and margin to adjust the spacing.
+
+  2. ul.social-icons li: This targets the list items (<li>) within the unordered list with the class "social-icons". 
+  It sets the display to inline-block, 
+  allowing the list items to be placed horizontally next to each other. 
+  It also applies margin to adjust the spacing between the list items.
+
+  3. ul.social-icons li img: This targets the images (<img>) within the 
+  list items of the unordered list with the class "social-icons". 
+  It sets the height of the images to 50 pixels.*/
+
+ul.social-icons {        
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 60px;
+}
+
+ul.social-icons li {
+  display: inline-block;
+  margin-top: 500px; /* Adjust the margin as per your preference */
+  margin-right: 10px;
+}
+
+ul.social-icons li img {
+  height: 50px;
+  
+}
+
+
+
+
+  
+  
